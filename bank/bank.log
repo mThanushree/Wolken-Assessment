@@ -1,0 +1,114 @@
+2021-11-14 17:24:32 [main] =Starting BankApplication using Java 1.8.0_291 on WSPL-0121 with PID 5784 (C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\bank\target\classes started by WSPL-0121 in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\bank) ==>[logStarting][com.wolken.bank.BankApplication]
+2021-11-14 17:24:32 [main] =No active profile set, falling back to default profiles: default ==>[logStartupProfileInfo][com.wolken.bank.BankApplication]
+2021-11-14 17:24:33 [main] =Bootstrapping Spring Data JPA repositories in DEFAULT mode. ==>[registerRepositoriesIn][org.springframework.data.repository.config.RepositoryConfigurationDelegate]
+2021-11-14 17:24:33 [main] =Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces. ==>[registerRepositoriesIn][org.springframework.data.repository.config.RepositoryConfigurationDelegate]
+2021-11-14 17:24:34 [main] =Tomcat initialized with port(s): 8080 (http) ==>[initialize][org.springframework.boot.web.embedded.tomcat.TomcatWebServer]
+2021-11-14 17:24:34 [main] =Starting service [Tomcat] ==>[log][org.apache.catalina.core.StandardService]
+2021-11-14 17:24:34 [main] =Starting Servlet engine: [Apache Tomcat/9.0.54] ==>[log][org.apache.catalina.core.StandardEngine]
+2021-11-14 17:24:34 [main] =Initializing Spring embedded WebApplicationContext ==>[log][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]]
+2021-11-14 17:24:34 [main] =Root WebApplicationContext: initialization completed in 2108 ms ==>[prepareWebApplicationContext][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]
+2021-11-14 17:24:35 [main] =HikariPool-1 - Starting... ==>[getConnection][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:24:36 [main] =HikariPool-1 - Start completed. ==>[getConnection][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:24:40 [main] =Initialized JPA EntityManagerFactory for persistence unit 'default' ==>[buildNativeEntityManagerFactory][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean]
+2021-11-14 17:24:40 [main] =Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'balanceController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.wolken.bank.service.EmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} ==>[refresh][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext]
+2021-11-14 17:24:40 [main] =Closing JPA EntityManagerFactory for persistence unit 'default' ==>[destroy][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean]
+2021-11-14 17:24:40 [main] =HikariPool-1 - Shutdown initiated... ==>[close][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:24:40 [main] =HikariPool-1 - Shutdown completed. ==>[close][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:24:40 [main] =Stopping service [Tomcat] ==>[log][org.apache.catalina.core.StandardService]
+2021-11-14 17:24:40 [main] =
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. ==>[logMessage][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener]
+2021-11-14 17:24:40 [main] =
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in com.wolken.bank.controller.BalanceController required a bean of type 'com.wolken.bank.service.EmployeeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.wolken.bank.service.EmployeeService' in your configuration.
+ ==>[report][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]
+2021-11-14 17:28:09 [main] =Starting BankApplication using Java 1.8.0_291 on WSPL-0121 with PID 6176 (C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\bank\target\classes started by WSPL-0121 in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\bank) ==>[logStarting][com.wolken.bank.BankApplication]
+2021-11-14 17:28:09 [main] =No active profile set, falling back to default profiles: default ==>[logStartupProfileInfo][com.wolken.bank.BankApplication]
+2021-11-14 17:28:10 [main] =Bootstrapping Spring Data JPA repositories in DEFAULT mode. ==>[registerRepositoriesIn][org.springframework.data.repository.config.RepositoryConfigurationDelegate]
+2021-11-14 17:28:10 [main] =Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces. ==>[registerRepositoriesIn][org.springframework.data.repository.config.RepositoryConfigurationDelegate]
+2021-11-14 17:28:10 [main] =Tomcat initialized with port(s): 8080 (http) ==>[initialize][org.springframework.boot.web.embedded.tomcat.TomcatWebServer]
+2021-11-14 17:28:10 [main] =Starting service [Tomcat] ==>[log][org.apache.catalina.core.StandardService]
+2021-11-14 17:28:10 [main] =Starting Servlet engine: [Apache Tomcat/9.0.54] ==>[log][org.apache.catalina.core.StandardEngine]
+2021-11-14 17:28:10 [main] =Initializing Spring embedded WebApplicationContext ==>[log][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]]
+2021-11-14 17:28:10 [main] =Root WebApplicationContext: initialization completed in 1233 ms ==>[prepareWebApplicationContext][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]
+2021-11-14 17:28:11 [main] =HikariPool-1 - Starting... ==>[getConnection][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:28:11 [main] =HikariPool-1 - Start completed. ==>[getConnection][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:28:12 [main] =Initialized JPA EntityManagerFactory for persistence unit 'default' ==>[buildNativeEntityManagerFactory][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean]
+2021-11-14 17:28:12 [main] =Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'balanceController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.wolken.bank.service.EmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} ==>[refresh][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext]
+2021-11-14 17:28:12 [main] =Closing JPA EntityManagerFactory for persistence unit 'default' ==>[destroy][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean]
+2021-11-14 17:28:12 [main] =HikariPool-1 - Shutdown initiated... ==>[close][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:28:12 [main] =HikariPool-1 - Shutdown completed. ==>[close][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:28:12 [main] =Stopping service [Tomcat] ==>[log][org.apache.catalina.core.StandardService]
+2021-11-14 17:28:12 [main] =
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. ==>[logMessage][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener]
+2021-11-14 17:28:12 [main] =
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in com.wolken.bank.controller.BalanceController required a bean of type 'com.wolken.bank.service.EmployeeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.wolken.bank.service.EmployeeService' in your configuration.
+ ==>[report][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]
+2021-11-14 17:38:21 [main] =Starting BankApplication using Java 1.8.0_291 on WSPL-0121 with PID 11340 (C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\bank\target\classes started by WSPL-0121 in C:\Users\USER\Documents\workspace-spring-tool-suite-4-4.12.0.RELEASE\bank) ==>[logStarting][com.wolken.bank.BankApplication]
+2021-11-14 17:38:21 [main] =No active profile set, falling back to default profiles: default ==>[logStartupProfileInfo][com.wolken.bank.BankApplication]
+2021-11-14 17:38:22 [main] =Bootstrapping Spring Data JPA repositories in DEFAULT mode. ==>[registerRepositoriesIn][org.springframework.data.repository.config.RepositoryConfigurationDelegate]
+2021-11-14 17:38:22 [main] =Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces. ==>[registerRepositoriesIn][org.springframework.data.repository.config.RepositoryConfigurationDelegate]
+2021-11-14 17:38:22 [main] =Tomcat initialized with port(s): 8080 (http) ==>[initialize][org.springframework.boot.web.embedded.tomcat.TomcatWebServer]
+2021-11-14 17:38:22 [main] =Starting service [Tomcat] ==>[log][org.apache.catalina.core.StandardService]
+2021-11-14 17:38:22 [main] =Starting Servlet engine: [Apache Tomcat/9.0.54] ==>[log][org.apache.catalina.core.StandardEngine]
+2021-11-14 17:38:23 [main] =Initializing Spring embedded WebApplicationContext ==>[log][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]]
+2021-11-14 17:38:23 [main] =Root WebApplicationContext: initialization completed in 1142 ms ==>[prepareWebApplicationContext][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]
+2021-11-14 17:38:23 [main] =HikariPool-1 - Starting... ==>[getConnection][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:38:24 [main] =HikariPool-1 - Start completed. ==>[getConnection][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:38:24 [main] =Initialized JPA EntityManagerFactory for persistence unit 'default' ==>[buildNativeEntityManagerFactory][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean]
+2021-11-14 17:38:24 [main] =Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'balanceController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.wolken.bank.service.EmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} ==>[refresh][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext]
+2021-11-14 17:38:24 [main] =Closing JPA EntityManagerFactory for persistence unit 'default' ==>[destroy][org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean]
+2021-11-14 17:38:24 [main] =HikariPool-1 - Shutdown initiated... ==>[close][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:38:24 [main] =HikariPool-1 - Shutdown completed. ==>[close][com.zaxxer.hikari.HikariDataSource]
+2021-11-14 17:38:24 [main] =Stopping service [Tomcat] ==>[log][org.apache.catalina.core.StandardService]
+2021-11-14 17:38:24 [main] =
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. ==>[logMessage][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener]
+2021-11-14 17:38:24 [main] =
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in com.wolken.bank.controller.BalanceController required a bean of type 'com.wolken.bank.service.EmployeeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.wolken.bank.service.EmployeeService' in your configuration.
+ ==>[report][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter]
